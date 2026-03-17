@@ -1,0 +1,4 @@
+!dist/assets/node_modules/**
+!assets/node_modules/**
+
+!public/wa-sqlite.wasm

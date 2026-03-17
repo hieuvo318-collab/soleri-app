@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cp -r \"D:/AI/antigravity/Soleri/soleri-app/constants\" \"D:/AI/antigravity/Soleri/soleri-app/constants.bak\")",
+      "Bash(cp -r \"D:/AI/antigravity/Soleri/soleri-app/src\" \"D:/AI/antigravity/Soleri/soleri-app/src.bak\")",
+      "Bash(npx expo:*)"
+    ]
+  }
+}
