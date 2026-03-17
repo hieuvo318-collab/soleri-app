@@ -9,7 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "lint": "expo lint",
-    "build": "npx expo export && node scripts/fix-wasm.js"
+    "build": "npx expo export --output-dir public && node scripts/fix-wasm.js"
   },
   "dependencies": {
     "@antv/g2plot": "^2.4.35",

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
-const webDistDir = path.join(__dirname, '../dist/_expo/static/js/web');
+const webDistDir = path.join(__dirname, '../public/_expo/static/js/web');
 
 if (!fs.existsSync(webDistDir)) {
     console.error(`Directory ${webDistDir} does not exist.`);
@@ -66,7 +66,7 @@ const wasmSourcePath = fs.readdirSync(wasmSourceDir).find(f => f.endsWith('.wasm
 if (wasmSourcePath) {
     fs.copyFileSync(
         path.join(wasmSourceDir, wasmSourcePath),
-        path.join(__dirname, '../dist/wa-sqlite.wasm')
+        path.join(__dirname, '../public/wa-sqlite.wasm')
     );
     console.log(`Copied ${wasmSourcePath} to dist/wa-sqlite.wasm`);
 }
